@@ -39,6 +39,7 @@ function App() {
     'shawn-sing.jpg',
     'profile.jpg',
     'shawn-side.jpg',
+    'shawn-posing.jpg'
   ];
 
   return (
