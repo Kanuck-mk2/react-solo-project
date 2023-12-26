@@ -1,0 +1,78 @@
+/* Add animation for spinning box shadow */
+@keyframes spin {
+  0% {
+    box-shadow: 0 0 5px 3px hsl(263, 86%, 60%);
+  }
+  25% {
+    box-shadow: 0 0 5px 3px hsl(199, 78%, 61%);
+  }
+  50% {
+    box-shadow: 0 0 5px 3px hsl(295, 80%, 71%); /* Adjust the end color */
+  }
+  75% {
+    box-shadow: 0 0 5px 3px hsl(199, 78%, 61%);
+  }
+  100% {
+    box-shadow: 0 0 5px 3px hsl(263, 86%, 60%);
+  }
+}
+
+
+
+/* Styles for the footer container */
+.footer-container {
+  /* Set the maximum width of the container */
+  max-width: 283px;
+  /* Set the height of the container */
+  height: 64px;
+  /* Add a border around the container with a color based on HSL values */
+  border: 1px solid hsl(0, 0%, 5%);
+  /* Apply border-radius to create rounded corners on the bottom */
+  border-radius: 0px 0px 8px 8px;
+  /* Add a box shadow for a subtle elevation effect */
+  box-shadow: 3px 5px 5px 3px hsl(0, 2%, 21%);
+  /* Set the background color of the container using HSL values */
+  background: hsl(0, 0%, 11%);
+}
+
+/* Styles for the container of social media icons */
+.social-icons-container {
+  /* Set the background color for the social icons container */
+  background: hsl(0, 0%, 11%);
+  /* Use flexbox to evenly space out social icons horizontally */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styles for individual social media icons */
+.social-icon {
+  /* Set the background color for individual social icons */
+  background: hsl(0, 0%, 11%);
+  /* Add margins to create spacing around each social icon */
+  margin: 16px 16px 0px 16px;
+  /* Apply border-radius to create circular social icons */
+  border-radius: 100%;
+  /* Add a transition effect for a smooth hover animation */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Styles for the images inside social media icons */
+.social-icon img {
+  /* Apply border-radius to make the image circular */
+  border-radius: 100%;
+  /* Remove the default background of the image */
+  background: none;
+  /* Set a fixed width for the image */
+  width: 30px;
+}
+
+/* Hover styles for social media icons */
+.social-icon:hover {
+  /* Scale up the size of the icon on hover */
+  transform: scale(1.2);
+  /* Add a box shadow for a highlighted effect on hover */
+  box-shadow: 0px 0px 5px 3px rgb(94, 154, 239);
+  /* Adjust the border-radius on hover for a circular effect */
+  border-radius: 50%;
+  animation: spin 6s linear infinite;
+}

@@ -1,0 +1,169 @@
+/* Define custom fonts */
+@font-face {
+  font-family: 'Alex Font';
+  src: url('/solo-project1/public/fonts/RethinkSans-Regular.ttf')
+    format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alex Font2';
+  src: url('/solo-project1/public/fonts/nunito/Nunito-Medium.ttf')
+    format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Add animation for spinning box shadow */
+@keyframes spin {
+  0%,
+  100% {
+    box-shadow: 0 0 5px 3px hsl(263, 86%, 60%);
+  }
+  25% {
+    box-shadow: 0 0 5px 3px hsl(199, 78%, 61%);
+  }
+  50% {
+    box-shadow: 0 0 5px 3px hsl(295, 80%, 71%); /* Adjust the end color */
+  }
+  75% {
+    box-shadow: 0 0 5px 3px hsl(199, 78%, 61%);
+  }
+}
+
+/* Apply font styles to the entire body */
+body {
+  font-family: 'Alex Font2', sans-serif;
+}
+
+/* Apply font styles to specific elements */
+h1,
+h2,
+h3,
+p {
+  font-family: 'Alex Font2';
+}
+
+/* Styling for the business card container */
+.business-card {
+  background: #090909;
+  display: flex;
+  max-width: 248px;
+  height: 350px;
+  border: 1.5px solid rgb(10, 10, 10);
+  box-shadow: 3px 5px 5px 3px #373535;
+  padding: 60px 17px 17px 17px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Styling for the card title */
+.card-title {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #080808;
+}
+
+/* Styling for specific headings */
+h1,
+h3,
+.profile-title,
+.profile-title-sub {
+  background: #080808;
+  font-size: 16px;
+}
+
+/* Specific styling for each heading */
+h1 {
+  color: #e5e9eb;
+  font-size: 28px;
+  margin-top: -50px;
+}
+
+h3 {
+  font-size: 17px;
+  margin-top: 12px;
+  color: #e5e9eb;
+}
+
+.profile-title {
+  color: #3abedb;
+  text-shadow: 0px 2px 6px #f15ae9;
+  font-size: 16px;
+  margin-top: -20px;
+}
+
+.profile-title-sub {
+  color: #e5e9eb;
+  margin-top: 15px;
+}
+
+/* Styling for the button container */
+.button--container {
+  display: flex;
+  background: #080808;
+  gap: 15px;
+  margin-top: -25px;
+}
+
+/* Styling for the contact button */
+.contact-button {
+  background-color: #1b1b1b;
+  color: #e5e9eb;
+  display: flex;
+  align-items: center;
+  width: 125px;
+  height: 35px;
+  margin-top: 0px;
+  padding: 10px 12px;
+  border: 1px solid #4a4c4d;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+
+  /* Transitions for smooth animation */
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+
+  position: relative;
+}
+
+/* Styling for the button image */
+.button--image {
+  background: #404143;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  margin-right: 6px;
+  transition: background-color 0.3 ease-in-out;
+}
+
+/* Hover effect for the contact button */
+.contact-button:hover {
+  background-color: #4fb5e0;
+  box-shadow: 0px 0px 1px 1px #4fb5e0;
+  transform: scale(1.1);
+  animation: spin 6s linear infinite; /* Adjust the animation duration */
+}
+
+/* Styling for the profile about section */
+.profile--about {
+  font-size: 10px;
+  padding: 0;
+  margin-bottom: 0.5px;
+  color: #e5e9eb;
+  background-color: #080808;
+  text-align: left;
+}
+
+/* Styling for the profile about paragraph */
+.profile--about--p {
+  font-size: 15px;
+  color: #e5e9eb;
+  margin-bottom: 0px;
+  background-color: #080808;
+  text-align: left;
+}
