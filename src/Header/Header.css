@@ -43,7 +43,3 @@
   transition: transform 0.3s ease-in-out;
   perspective: 100px;
 }
-
-.profile--image.flipped {
-  transform: rotateY(180deg);
-}
