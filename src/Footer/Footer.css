@@ -19,6 +19,7 @@
 
 /* Styles for the footer container */
 .footer-container {
+  margin-left: 20px;
   width: 283px;
   /* Set the maximum width of the container */
 

@@ -27,6 +27,8 @@
 /* Apply other styles to the element */
 .profile--image {
   margin: 0;
+  margin-top: 20px;
+  margin-left: 20px;
   display: flex;
   max-width: 281.5px;
   height: auto;

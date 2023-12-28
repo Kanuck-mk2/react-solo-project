@@ -49,6 +49,7 @@ p {
 .business-card {
   background: #090909;
   display: flex;
+  margin-left: 20px;
   width:max-content ;
   max-width: 248px;
   height: 350px;
