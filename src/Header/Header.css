@@ -26,6 +26,7 @@
 
 /* Apply other styles to the element */
 .profile--image {
+  margin: 0;
   display: flex;
   max-width: 281.5px;
   height: auto;
@@ -38,7 +39,7 @@
   align-items: center;
   flex-shrink: 0;
   transition: transform 0.3s ease-in-out;
-  perspective: 1000px;
+  perspective: 100px;
 }
 
 .profile--image.flipped {

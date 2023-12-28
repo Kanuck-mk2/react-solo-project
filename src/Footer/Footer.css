@@ -17,12 +17,11 @@
   }
 }
 
-
-
 /* Styles for the footer container */
 .footer-container {
+  width: 283px;
   /* Set the maximum width of the container */
-  max-width: 283px;
+
   /* Set the height of the container */
   height: 64px;
   /* Add a border around the container with a color based on HSL values */
