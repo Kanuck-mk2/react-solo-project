@@ -1,5 +1,3 @@
-// Main.jsx
-
 import './Main.css';
 
 // Main component with props for handling button clicks
@@ -20,7 +18,7 @@ export default function Main({ onEmailButtonClick, onWebsiteButtonClick }) {
     // Check if onWebsiteButtonClick prop is provided before invoking
     if (onWebsiteButtonClick) {
       // Open a new window for the website functionality
-      window.open('https://www.benchpressed.com', '_blank');
+      window.open('https://www.shawnmendesofficial.com/', '_blank');
     }
   };
 
@@ -30,8 +28,8 @@ export default function Main({ onEmailButtonClick, onWebsiteButtonClick }) {
       {/* Section for the card title */}
       <div className="card-title">
         <h1>Alex Mendes</h1>
-        <p className="profile-title">Fullstack Developer</p>
-        <p className="profile-title-sub">codetolift.com</p>
+        <p className="profile-title">Web Developer</p>
+        <p className="profile-title-sub">Vertex Designs</p>
       </div>
 
       {/* Container for contact buttons */}
@@ -43,7 +41,7 @@ export default function Main({ onEmailButtonClick, onWebsiteButtonClick }) {
           onClick={handleEmailButtonClick}
         >
           <img
-            src="/public/email.png"
+            src="envelope.png"
             alt="Button Image"
             className="button--image"
           />
@@ -56,11 +54,7 @@ export default function Main({ onEmailButtonClick, onWebsiteButtonClick }) {
           id="web-button"
           onClick={handleWebsiteButtonClick}
         >
-          <img
-            src="/public/website.png"
-            alt="Button Image"
-            className="button--image"
-          />
+          <img src="code.png" alt="Button Image" className="button--image" />
           Website
         </button>
       </div>
@@ -69,9 +63,10 @@ export default function Main({ onEmailButtonClick, onWebsiteButtonClick }) {
       <div className="profile--about">
         <h3>About Me</h3>
         <p className="profile--about--p">
-          An aspiring fullstack developer with a passion to write clean
-          efficient code. I enjoy learning new ways to code and embracing new
-          innovations in the tech industry.
+          An aspiring Web Developer with a passion to create beautiful user
+          interfaces and webpages while writing clean, efficient, and
+          well-structured code.<br></br> I enjoy learning new ways to program
+          and embracing new innovations in web design.
         </p>
       </div>
 

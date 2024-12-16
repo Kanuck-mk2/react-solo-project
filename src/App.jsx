@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './Header/Header';
 import Main from './Main/Main';
 import Footer from './Footer/Footer';
+import './App.css';
 
 const socialMediaData = [
   { name: 'Facebook', link: 'https://www.facebook.com', icon: 'facebook.png' },
@@ -13,8 +14,6 @@ const socialMediaData = [
   { name: 'GitHub', link: 'https://www.github.com', icon: 'github.png' },
   { name: 'Twitter', link: 'https://www.twitter.com', icon: 'twitter.png' },
 ];
-
-import './App.css';
 
 function App() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -30,7 +29,7 @@ function App() {
 
   // Function to handle website button click
   const handleWebsiteButtonClick = () => {
-    window.location.href = 'https://www.benchpressed.com';
+    window.location.href = 'https://www.shawnmendesofficial.com/';
   };
 
   // Specify the path to your profile image
@@ -39,7 +38,7 @@ function App() {
     'shawn-sing.jpg',
     'profile.jpg',
     'shawn-side.jpg',
-    'shawn-posing.jpg'
+    'shawn-posing.jpg',
   ];
 
   return (

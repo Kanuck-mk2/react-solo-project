@@ -19,7 +19,7 @@
 
 /* Styles for the footer container */
 .footer-container {
-  margin-left: 20px;
+  margin: auto;
   width: 283px;
   /* Set the maximum width of the container */
 
@@ -30,7 +30,7 @@
   /* Apply border-radius to create rounded corners on the bottom */
   border-radius: 0px 0px 8px 8px;
   /* Add a box shadow for a subtle elevation effect */
-  box-shadow: 3px 5px 5px 3px hsl(0, 2%, 21%);
+  box-shadow: 0px 2px 2px 2px hsl(0, 2%, 21%);
   /* Set the background color of the container using HSL values */
   background: hsl(0, 0%, 11%);
 }
