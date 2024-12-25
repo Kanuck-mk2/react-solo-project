@@ -11,13 +11,13 @@
     "react-scripts": "^3.0.1",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "dev": "vite",
-    "build": "[my-framework] build --output public",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-    
-  },
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
+
   "eslintConfig": {
     "extends": [
       "react-app",
